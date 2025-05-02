@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aúdio no site</title>
+</head>
+
+<body>
+    <h1>Reproduzindo aúdio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- <audio src="midia/mas-cafe-casa-rosa.mp3" controls autoplay></audio> -->
+    <audio preload="auto" autoplay controls loop>
+        <!--A ordem importa, até mesmo para os áudios-->
+        <source src="midia/mas-cafe-casa-rosa.mp3" type="audio/mpeg">
+        <source src="midia/mas-cafe-casa-rosa.ogg" type="audio/ogg">
+        <source src="midia/mas-cafe-casa-rosa.wav" type="audio/wav">
+    </audio>
+    <p>Infelizmente o seu navegador não consegue reproduzir aúdio.
+        <a href="midia/mas-cafe-casa-rosa.mp3">Clique aqui
+            para baixar o arquivo MP3</a>
+    </p>
+</body>
+
+</html>
